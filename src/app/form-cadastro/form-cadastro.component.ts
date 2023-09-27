@@ -18,6 +18,6 @@ export class FormCadastroComponent {
 
   createUser(): void {
     const dadosForm = this.formulario.getRawValue();
-    console.log(dadosForm)
+    this.cadastroContatosService.createUser(dadosForm)
     }
 }
